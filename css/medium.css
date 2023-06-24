@@ -1,0 +1,12 @@
+.flex_row_container_medium{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.singlePlace{
+    width: 48%;
+}
+

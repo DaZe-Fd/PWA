@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aplikacja pogodowa ☁ ☀</h1>
+    </header>
+    <main>
+        <div class="app_top">
+            <input type="text" placeholder="wpisz miasto" class="city_input">
+            <button class="check">Sprawdź pogodę</button>
+
+        </div>
+        <p class="error"></p>
+        <div class="app_bottom">
+            <h2 class="city_name"></h2>
+            <div class="box">
+                <img src="" alt="">
+                <p class="temperature_descripton"></p>
+            </div>
+            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+            <p>Ciśnienie: <span class="pressure"></span></p>
+            <p>Wilgotność: <span class="humidity"></span></p>
+            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+            <p>Zachmurzenie: <span class="clouds"></span></p>
+        </div>
+        <div class="air_pollution">
+            <h3>Pyły zawieszone</h3>
+            <div class="pollution">
+                <img src="/img/2.5_dust_pollution_icon.png" alt="">
+                <p><span class="pm25"></span>&micro;g/m<sup>3</sup></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

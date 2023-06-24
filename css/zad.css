@@ -1,0 +1,31 @@
+body{
+    background-color: gray;
+}
+
+button{
+    position: relative;
+    padding: 10px;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button::before {
+	content: '';
+	position: absolute;
+	
+	top: -50px;
+	left: -130px;
+	height: 100px;
+	width: 50px;
+	background-color: rgba(255, 255, 255, 0.451);
+	rotate: 20deg;
+}
+
+button:hover::before {
+    transition: 0.5s;
+	left: 130%;
+}
